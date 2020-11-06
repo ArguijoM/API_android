@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/inicio">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.pm_mal_pr01.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.pm_mal_pr01.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.pm_mal_pr01.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/inicio"
+        android:name="com.example.pm_mal_pr01.inicio"
+        android:label="Inicio"
+        tools:layout="@layout/fragment_inicio" />
+    <fragment
+        android:id="@+id/lista"
+        android:name="com.example.pm_mal_pr01.Lista"
+        android:label="Lista"
+        tools:layout="@layout/fragment_lista" />
+    <fragment
+        android:id="@+id/agregar"
+        android:name="com.example.pm_mal_pr01.Agregar"
+        android:label="Agregar"
+        tools:layout="@layout/fragment_agregar" />
+</navigation>
